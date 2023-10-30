@@ -10,7 +10,7 @@ hw_timer_t * timer = NULL;
 volatile uint8_t led_state = 0;
 
 
-void IRAM_ATTR timer_isr(){
+void IRAM_ATTR timer_isr() {
     led_state = ! led_state;
     digitalWrite(PIN_LED, led_state);
 }

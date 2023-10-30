@@ -4,8 +4,9 @@
 #define PIN_LED_2 23
 #define PIN_LED_3 22
 
+
 void setup() {
-    // put your setup code here, to run once:
+    // Put your setup code here, to run once:
     Serial.begin(115200);
     pinMode(PIN_LED, OUTPUT);
     pinMode(PIN_LED_2, OUTPUT);
@@ -16,8 +17,9 @@ void setup() {
     digitalWrite(PIN_LED_3, LOW);
 }
 
+
 void loop() {
-    // put your main code here, to run repeatedly:
+    // Put your main code here, to run repeatedly:
     Serial.println("1st LED is on");
     digitalWrite(PIN_LED, HIGH);
     delay(500);
