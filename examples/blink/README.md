@@ -108,7 +108,7 @@ For an active-high LED:
 
 2. Write the code for continuous blinking of all three LEDs (including the onboard one).
 
-## Logic analyser
+## Logic analyzer
 
 Connect the logic analyzer to the `Tx` pin (usually GPIO1). Launch the logic analyzer software Logic and **Start** the capture. Saleae Logic software offers a decoding feature to transform the captured signals into meaningful UART messages. Click to **+ button** in **Analyzers** part and setup **Async Serial** decoder for 115200 Bd.
 
