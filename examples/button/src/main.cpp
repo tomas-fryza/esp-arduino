@@ -1,7 +1,7 @@
 #include <Arduino.h>
 
 #define PIN_LED 2
-#define PIN_BTN 23
+#define PIN_BTN 27
 
 
 void setup() {
