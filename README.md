@@ -95,14 +95,8 @@ Other common [shortcuts in VS Code](https://code.visualstudio.com/shortcuts/keyb
 2. [Button](examples/button/)
 3. [Timers](examples/timer/)
 4. [I2C scanner](examples/i2c-scan/)
-5. [I2C sensor](examples/i2c-sensor/)
-   > I2C čtení ze senzoru MPU-6050, 0x68
-https://randomnerdtutorials.com/esp32-mpu-6050-accelerometer-gyroscope-arduino/
-
+5. [I2C sensor MPU-6050](examples/i2c-sensor/)
 6. I2C OLED display
-7. Wi-Fi scanner
-   > Wi-Fi scan
-https://github.com/platformio/platform-espressif32/blob/develop/examples/arduino-wifiscan/src/WiFiScan.ino
-
-8. Wi-Fi Station mode
+7. [Wi-Fi scanner](examples/wifi-scan/)
+8. [Wi-Fi Station mode](examples/wifi-station/)
 9. ThingSpeak online platform
