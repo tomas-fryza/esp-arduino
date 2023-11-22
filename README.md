@@ -95,7 +95,7 @@ Other common [shortcuts in VS Code](https://code.visualstudio.com/shortcuts/keyb
 2. [Button](examples/button/)
 3. [Timers](examples/timer/)
 4. [I2C scanner](examples/i2c-scan/)
-5. I2C sensor
+5. [I2C sensor](examples/i2c-sensor/)
    > I2C čtení ze senzoru MPU-6050, 0x68
 https://randomnerdtutorials.com/esp32-mpu-6050-accelerometer-gyroscope-arduino/
 
