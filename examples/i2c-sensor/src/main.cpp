@@ -15,6 +15,11 @@
 #include <Adafruit_MPU6050.h>
 #include <Wire.h>
 
+#define FREQUENCY_HZ 100
+#define INTERVAL_MS (1000 / (FREQUENCY_HZ+1))
+
+static unsigned long last_interval_ms = 0;
+
 // Create sensor object `mpu`
 Adafruit_MPU6050 mpu;
 
@@ -61,28 +66,39 @@ void loop()
 {
     sensors_event_t a, g, temp;
 
-    // Get new sensor events with current readings
-    mpu.getEvent(&a, &g, &temp);
+    if (millis() > last_interval_ms + INTERVAL_MS) {
+        last_interval_ms = millis();
 
-    // Print accelerations on x, y, z axis
-    Serial.print("Accel. [m/s^2]: ");
-    Serial.print(a.acceleration.x);
-    Serial.print(" ");
-    Serial.print(a.acceleration.y);
-    Serial.print(" ");
-    Serial.print(a.acceleration.z);
+        // Get new sensor events with current readings
+        mpu.getEvent(&a, &g, &temp);
 
-    // Print angular velocity on axis
-    Serial.print("\tRotation [rad/s]: ");
-    Serial.print(g.gyro.x);
-    Serial.print(" ");
-    Serial.print(g.gyro.y);
-    Serial.print(" ");
-    Serial.print(g.gyro.z);
+        Serial.print(a.acceleration.x);
+        Serial.print(",");
+        Serial.print(a.acceleration.y);
+        Serial.print(",");
+        Serial.println(a.acceleration.z);
+    }
+    /*
+        // Print accelerations on x, y, z axis
+        Serial.print("Accel. [m/s^2]: ");
+        Serial.print(a.acceleration.x);
+        Serial.print(" ");
+        Serial.print(a.acceleration.y);
+        Serial.print(" ");
+        Serial.print(a.acceleration.z);
 
-    // Print temperature in Celsius degrees
-    Serial.print("\tTemp. [C]: ");
-    Serial.println(temp.temperature);
+        // Print angular velocity on axis
+        Serial.print("\tRotation [rad/s]: ");
+        Serial.print(g.gyro.x);
+        Serial.print(" ");
+        Serial.print(g.gyro.y);
+        Serial.print(" ");
+        Serial.print(g.gyro.z);
 
-    delay(1000);
+        // Print temperature in Celsius degrees
+        Serial.print("\tTemp. [C]: ");
+        Serial.println(temp.temperature);
+
+        delay(1000);
+    */
 }
