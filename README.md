@@ -1,4 +1,4 @@
-# Arduino framework in ESP32/ESP8266 microcontrollers
+# Arduino framework for ESP32/ESP8266 microcontrollers
 
 The repository contains instructions and examples for ESP32/ESP8266 microcontrollers using C/C++ Arduino framework in PlatformIO and Visual Studio Code IDE.
 
