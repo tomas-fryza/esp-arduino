@@ -10,6 +10,7 @@ void setup()
     Serial.println("Scanning I2C... ");
 
     for (uint8_t sla = 8; sla < 120; sla++) {
+        Serial.println(sla, HEX);
         // I2c scanner uses the return value of `Write.endTransmisstion()`
         // to see if a device did acknowledge to the address
         Wire.beginTransmission(sla);

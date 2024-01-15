@@ -95,6 +95,7 @@ Other common [shortcuts in VS Code](https://code.visualstudio.com/shortcuts/keyb
 2. [Button](examples/button/)
 3. [Timers](examples/timer/)
 4. [I2C scanner](examples/i2c-scan/)
+5. [I2C sensor DHT12](examples/i2c-sensor-dht/)
 5. [I2C sensor MPU-6050](examples/i2c-sensor/)
 6. I2C OLED display
 7. [Wi-Fi scanner](examples/wifi-scan/)
