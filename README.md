@@ -100,4 +100,5 @@ Other common [shortcuts in VS Code](https://code.visualstudio.com/shortcuts/keyb
 6. [I2C SH1106 OLED display](examples/i2c-oled/)
 7. [Wi-Fi scanner](examples/wifi-scan/)
 8. [Wi-Fi Station mode](examples/wifi-station/)
-9. ThingSpeak online platform
+9. [ThingSpeak online platform](examples/wifi-thingspeak/)
+10. [Lilygo T-Display](examples/lilygo_t-display/)
