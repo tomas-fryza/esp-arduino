@@ -9,9 +9,11 @@
 
 #include <WiFi.h>
 
+
 void setup()
 {
     Serial.begin(115200);
+    while (!Serial);
 
     // Set WiFi to station mode and disconnect from an AP
     // if it was previously connected
@@ -23,19 +25,15 @@ void setup()
 
     // Scans for available WiFi networks and returns the discovered number
     int n = WiFi.scanNetworks();
-    Serial.print(n);
-    Serial.println(" network(s)");
-    
+    Serial.println(String(n) + " network(s)");
+
     if (n != 0) {
         Serial.println("RSSI Channel \tSSID");
         
         for (int i = 0; i < n; ++i) {
             Serial.print(WiFi.RSSI(i));
-            Serial.print("  (");
-            Serial.print(WiFi.channel(i));
-            Serial.print(") \t");
-            Serial.print(WiFi.SSID(i));
-            Serial.println("");
+            Serial.print("  (ch." + String(WiFi.channel(i)) + ") \t");
+            Serial.println(WiFi.SSID(i));
             delay(10);
         }
     }
