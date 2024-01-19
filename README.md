@@ -103,3 +103,19 @@ Other common [shortcuts in VS Code](https://code.visualstudio.com/shortcuts/keyb
 9. [Wi-Fi Station mode](examples/wifi-station/)
 10. [ThingSpeak online platform](examples/wifi-thingspeak/)
 11. [OpenWeatherMap](examples/wifi-openweather/)
+
+### Tested on
+
+| **Version**                | **Result (yyyy-mm-dd)** | **Note**     |
+| :------------------------- | :---------------------: | :----------- |
+| Linux Mint 21.2 (Victoria) | OK (2024-01-18)         | Laptop       |
+| Linux Mint 20.3 (Una)      | OK (2023-09-25)         | Laptop       |
+| Windows 10                 | OK (2023-09-21)         | Lab SC 6.61  |
+
+```bash
+# FYI: How to check OS version in Linux
+cat /etc/os-release
+
+# Or by Neofetch
+neofetch
+```
