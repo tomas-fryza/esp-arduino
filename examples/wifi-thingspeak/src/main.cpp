@@ -83,7 +83,6 @@ void setup()
     while (!Serial);
 
     dht12.begin();
-
     ThingSpeak.begin(client);  // Initialize ThingSpeak
 }
 
@@ -93,6 +92,7 @@ void loop()
     float temp = dht12.readTemperature();
     float humidity = dht12.readHumidity();
     Serial.println((String)"Temperature: "+temp+"°C, Humidity: "+humidity+"%");
+
     connect_wifi(WIFI_SSID, WIFI_PSWD);
 
     // Write to ThingSpeak. There are up to 8 fields in a channel
