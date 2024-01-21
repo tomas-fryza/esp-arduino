@@ -64,7 +64,7 @@ The repository contains instructions and examples for ESP32/ESP8266 microcontrol
 
 3. *Compile and upload the code:* The handy shortcuts for building and uploading the code is available on the footer taskbar. Hover over the icon to get its functionality. First, compile (build) the project, then upload it to ESP board, and open the Serial monitor to receive messages from the board. You can clean up generated files as well.
 
-   ![Control icons](images/platformio_footer2.png)
+   ![Control icons](images/platformio_navigation.png)
 
    *Command Palette:* All available commands in VS Code are also accessible by `Ctrl+Shift+P` shortcut and followed by a command. Most useful commands in this course are:
 
