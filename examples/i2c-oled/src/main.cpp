@@ -11,7 +11,7 @@
 
 
 // Declaration for an SH1106 display connected to I2C (SDA, SCL pins)
-#define OLED_RESET -1  // Reset pin # (or -1 if sharing Arduino reset pin)
+#define OLED_RESET 4  // Reset pin
 Adafruit_SH1106 oled(OLED_RESET);
 
 
