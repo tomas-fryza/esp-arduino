@@ -26,7 +26,7 @@ Adafruit_MPU6050 mpu;
 void setup()
 {
     Serial.begin(115200);
-    delay(200);
+    while (!Serial);
     // Serial.setDebugOutput(true);
 
     // Initialize MPU-6050 sensor
