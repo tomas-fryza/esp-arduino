@@ -15,7 +15,8 @@
 Adafruit_SH1106 oled(OLED_RESET);
 
 
-void setup() {
+void setup()
+{
     // Initialize OLED display with I2C address 0x3C
     // SSD1306_SWITCHCAPVCC = generate display voltage from 3.3V internally
     oled.begin(SH1106_SWITCHCAPVCC, 0x3C);
@@ -37,6 +38,7 @@ void setup() {
 }
 
 
-void loop() {
+void loop()
+{
     // Empty loop
 }
